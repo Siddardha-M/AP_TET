@@ -1,0 +1,313 @@
+:root {
+  /* ========================================
+     FOUR MAIN COLOR FAMILIES
+     ======================================== */
+
+  --purple: #6c5ce7;
+  --purple-light: #a99cff;
+  --purple-dark: #5142c5;
+
+  --teal: #00a896;
+  --teal-light: #5dded0;
+  --teal-dark: #007f73;
+
+  --coral: #e76f51;
+  --coral-light: #f5aa98;
+  --coral-dark: #c6533b;
+
+  --amber: #f2a640;
+  --amber-light: #ffd58c;
+  --amber-dark: #d4831f;
+
+  /* ========================================
+     GRADIENTS
+     ======================================== */
+
+  --gradient-purple:
+    linear-gradient(135deg, #6c5ce7 0%, #a99cff 100%);
+
+  --gradient-teal:
+    linear-gradient(135deg, #00a896 0%, #5dded0 100%);
+
+  --gradient-coral:
+    linear-gradient(135deg, #e76f51 0%, #f5aa98 100%);
+
+  --gradient-amber:
+    linear-gradient(135deg, #f2a640 0%, #ffd58c 100%);
+
+  /* ========================================
+     COMPLEMENTARY COLORS
+     ======================================== */
+
+  --purple-complement: var(--amber);
+  --teal-complement: var(--coral);
+  --coral-complement: var(--teal);
+  --amber-complement: var(--purple);
+
+  /* ========================================
+     LIGHT THEME
+     ======================================== */
+
+  --bg-surface: #ffffff;
+  --bg-soft: #f1f3f8;
+
+  --text-primary: #1f2430;
+  --text-secondary: #626a78;
+  --text-muted: #9299a7;
+  --text-white: #ffffff;
+
+  --border-light: #e6e8ef;
+  --border-medium: #d7dae4;
+
+  /* ========================================
+     STATUS
+     ======================================== */
+
+  --success: #00a896;
+  --success-soft: #e9faf7;
+
+  --error: #e76f51;
+  --error-soft: #fff0ec;
+
+  --warning: #f2a640;
+  --warning-soft: #fff7e8;
+
+/* ========================================
+   STYLISH APP BACKGROUND
+   ======================================== */
+
+--bg-primary: #eef1ff;
+
+--bg-gradient:
+  radial-gradient(
+    circle at 0% 0%,
+    rgba(108, 92, 231, 0.22) 0%,
+    transparent 32%
+  ),
+  radial-gradient(
+    circle at 100% 5%,
+    rgba(242, 166, 64, 0.18) 0%,
+    transparent 28%
+  ),
+  radial-gradient(
+    circle at 8% 100%,
+    rgba(0, 168, 150, 0.16) 0%,
+    transparent 32%
+  ),
+  radial-gradient(
+    circle at 100% 100%,
+    rgba(231, 111, 81, 0.14) 0%,
+    transparent 30%
+  ),
+  linear-gradient(
+    135deg,
+    #f7f8ff 0%,
+    #eefbf8 48%,
+    #fff7ef 100%
+  );
+  /* ========================================
+     SHADOWS
+     ======================================== */
+
+  --shadow-xs:
+    0 1px 3px rgba(31, 36, 48, 0.04);
+
+  --shadow-sm:
+    0 4px 12px rgba(31, 36, 48, 0.06);
+
+  --shadow-md:
+    0 10px 28px rgba(31, 36, 48, 0.08);
+
+  --shadow-lg:
+    0 18px 48px rgba(31, 36, 48, 0.12);
+
+  /* ========================================
+     RADIUS
+     ======================================== */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ========================================
+     LAYOUT
+     ======================================== */
+
+  --max-width: 1180px;
+  --content-padding: 20px;
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+
+  --font-main:
+    Inter,
+    "Noto Sans",
+    "Noto Sans Telugu",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  /* ========================================
+     TEXT SIZE SCALE
+     ======================================== */
+
+  --text-scale: 1;
+
+  /* ========================================
+     MOTION
+     ======================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+
+/* ========================================
+   DARK THEME
+   ======================================== */
+
+html[data-theme="dark"] {
+  --bg-primary: #101218;
+  --bg-surface: #181b24;
+  --bg-soft: #212530;
+
+  --text-primary: #f3f4f8;
+  --text-secondary: #b6bbc7;
+  --text-muted: #858c9b;
+  --text-white: #ffffff;
+
+  --border-light: #2a2f3b;
+  --border-medium: #383e4c;
+
+  --success: #20c9b3;
+  --success-soft: rgba(0, 168, 150, 0.14);
+
+  --error: #f28a70;
+  --error-soft: rgba(231, 111, 81, 0.14);
+
+  --warning: #f7b85b;
+  --warning-soft: rgba(242, 166, 64, 0.14);
+
+  --bg-gradient:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(108, 92, 231, 0.16),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 95% 12%,
+      rgba(242, 166, 64, 0.10),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(0, 168, 150, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 92% 88%,
+      rgba(231, 111, 81, 0.09),
+      transparent 25%
+    );
+
+  --shadow-xs:
+    0 1px 3px rgba(0, 0, 0, 0.18);
+
+  --shadow-sm:
+    0 4px 12px rgba(0, 0, 0, 0.20);
+
+  --shadow-md:
+    0 10px 28px rgba(0, 0, 0, 0.24);
+
+  --shadow-lg:
+    0 18px 48px rgba(0, 0, 0, 0.32);
+}
+
+
+/* ========================================
+   TEXT SIZE
+   ======================================== */
+
+html[data-text-size="small"] {
+  --text-scale: 0.9;
+}
+
+html[data-text-size="medium"] {
+  --text-scale: 1;
+}
+
+html[data-text-size="large"] {
+  --text-scale: 1.1;
+}
+
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+html[data-animations="off"] *,
+html[data-animations="off"] *::before,
+html[data-animations="off"] *::after {
+  animation-duration: 0ms !important;
+  animation-delay: 0ms !important;
+  transition-duration: 0ms !important;
+  scroll-behavior: auto !important;
+}
+
+
+/* ========================================
+   SYSTEM THEME
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="system"] {
+    --bg-primary: #101218;
+    --bg-surface: #181b24;
+    --bg-soft: #212530;
+
+    --text-primary: #f3f4f8;
+    --text-secondary: #b6bbc7;
+    --text-muted: #858c9b;
+    --text-white: #ffffff;
+
+    --border-light: #2a2f3b;
+    --border-medium: #383e4c;
+
+    --success: #20c9b3;
+    --success-soft: rgba(0, 168, 150, 0.14);
+
+    --error: #f28a70;
+    --error-soft: rgba(231, 111, 81, 0.14);
+
+    --warning: #f7b85b;
+    --warning-soft: rgba(242, 166, 64, 0.14);
+
+    --bg-gradient:
+      radial-gradient(
+        circle at 5% 5%,
+        rgba(108, 92, 231, 0.16),
+        transparent 28%
+      ),
+      radial-gradient(
+        circle at 95% 12%,
+        rgba(242, 166, 64, 0.10),
+        transparent 25%
+      ),
+      radial-gradient(
+        circle at 10% 85%,
+        rgba(0, 168, 150, 0.10),
+        transparent 28%
+      ),
+      radial-gradient(
+        circle at 92% 88%,
+        rgba(231, 111, 81, 0.09),
+        transparent 25%
+      );
+  }
+}
