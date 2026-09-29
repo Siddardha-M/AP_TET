@@ -2500,6 +2500,10 @@ html[data-text-size="large"] .settings-row-content span {
     box-shadow var(--transition-fast);
 }
 
+.practice-nav-button:first-child {
+  justify-self: start;
+}
+
 .practice-nav-button:last-child {
   justify-self: end;
 }
@@ -4186,7 +4190,7 @@ html[data-text-size="large"] .settings-row-content span {
 
   gap: 10px;
 
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 .practice-test-navigation > span {
@@ -4239,6 +4243,10 @@ html[data-text-size="large"] .settings-row-content span {
     box-shadow var(--transition-fast);
 }
 
+.practice-test-nav-button:first-child {
+  justify-self: start;
+}
+
 .practice-test-nav-button:last-child {
   justify-self: end;
 }
@@ -4277,7 +4285,7 @@ html[data-text-size="large"] .settings-row-content span {
 
   min-height: 46px;
 
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 0 16px;
 
   color: var(--text-white);
